@@ -26,14 +26,14 @@
       	background-color: white;
       	border-bottom: solid 1px #ebebeb;
     	}
-		
-    	header .logo{
+	
+	header .logo{
       	padding: 32px;
-      	float: left;
+      	float: center;
     	}
     
     	header .logo img{
-      	width:300px;
+      	width:150px;
     	}
 
     	header nav{
@@ -72,6 +72,19 @@
           /*letter-spacing: 1px; /*jarak antar huruf*/
 		  /*line-height: 1; /*tinggi 1 baris teks*/
         /*}*/
+		header nav{
+        display: none;
+      }
+      
+      .portfolio-box{
+        width: 90%;
+        display: block;
+        margin: 0 auto 16px;
+      }
+      
+      img.hero-image{
+        display: none;
+      }
     p {
           font-size: 18px;
         }
@@ -96,7 +109,7 @@
 
 	.footer {
 		overflow: hidden;
-		background-color: #008B8B;
+		background-color: #FFFF;
 	}
 	
 	.page{
@@ -110,13 +123,13 @@
 		background-color: #EAEDF0;  
 	}
 	
-	.footer-item {
+	/*.footer-item {
 		float: left;
 		width: 31%;
 		margin: 10px 1.15%;
 		height: 100px;
 		background-color: #8FBC8F;
-	}
+	}*/
 	.sub-sidebar {
 		color: white
 		vertical-align: center;
@@ -156,8 +169,7 @@
 	  <header>
 	<div class="logo">
 	<img src="https://lh3.googleusercontent.com/-yn9492waklQ/XcFNsb-eThI/AAAAAAAABIY/8yPG-zczP24wO-GzCFygO4ZNXN6BU_kEACEwYBhgLKs0DAMBZVoCn-lQTDp3GDK97JI39asFYCP8Sdv-qeJRPFL6Z7V2fsfu6S6l1MWwwEFplxUT3BBCQSnBpnUL0ZRsG1oKpgUe_JqmW6qh1HZ5aOY06RT08JZs-CL5-fhI1B-4a8_LAhjERF-ysclEaHDuMDK7gIgvDwddWy-mwzLWFvfEEWHebuR7QBpdmpEBHQ2hrIPsSJgJP6V4Duu5aaO6bB6RrzHjXCY4COyMOt6kjTqMmSDOr3nxrq2mTKeoizJ4uysUAYaye65zv5SeCiHLxnV4Mb-IOLDoRDYleEKXa3wSe3zk3sSNkZVCSGNEmCLL90-RauyFc87OcH_44MXC60vIRTDtmZQoonqIk6Ydo-BV7_aBb4_WQFuf2kkM3YPf9DRCoCEQiL19nPBU9KTF1E55jrh_5m5bf8cDEtlrLuZQAOo8Gws67wGQWX-EtG8kkl1mxzUI5CpfkoA4XfsE_al8_4JS_qmEpEFnda6JdNQYrCK7JvyHwpMyVDo5zJjKRXCEtHABlgqOivQW8Tf-g4zxcDjZZeA4-wtKyizFir_sXN-7j6xzalxoh5fgB_TfGw8YGFVqYlVHKYEN-6mw7AMakJ6oQlblXFgZhv-AwhNOW9AU/w140-h25-p/momimel.jpg">	
-    	<h2>a journey of a Professional UX/UI Designer to be <br/> </h2>
-	</div>
+    	</div>
     	<nav>
       	<ul>
         	<li><a href="#about">Home</a></li>
@@ -180,33 +192,59 @@
 			<div class='sub-sidebar'></div>
 		</div>
 		<div class='content'>
-		<p><h3>Partial Lockdown day #1 @ Penang </h3>
-				Hari ini hari pertama Partial Lockdown di Malaysia..<br/>
-				Jalanan relatif lebih sepi..<br/>		
-				Kedai runcit (toko kelontong) masih sepi barangnya tapi masih ada pembelinya..<br/>
-				Kompleks makanan sepi, yang nampak hanya abang delivery yang ambil pesanan..
-				<br/></p>
-				<p>Mesjid sepi, gerbangnya ditutup dan ditempel pengumuman.. </br>adzan nya pun sudah menyesuaikan, diarahkan untuk shalat di rumah..
-				<br/></p>
-				All iz well insyaa Allah 😊<br/>
-				<b>please stay at home as possible as u can ❤️</b><br/>
-				<p>Semoga sehat semuanya</p>
-			</div>
+		<h2 id="about"> a journey of a Professional UX/UI Designer to be <br/> </h2>
+		
+		<section class="hero-text">
+        	<p>Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      		</section>
+		
+		<img class="hero-image" src="https://lh3.googleusercontent.com/-EGNmMRc0MLA/XoS5iBEDyOI/AAAAAAAABUs/p2uJ6jiiNToWYwSyz45Ps4NARATaueurQCLcBGAsYHQ/w140-h140-p/%25E2%2580%2594Pngtree%25E2%2580%2594programming%2Band%2Bcoding%2Bconcept%2Bapplication_3654332.png" alt="Me!" />
+      		<section class="portfolio">
+		<h2 id="portfolio">Portfolio</h2>
+			<div class="portfolio-box">
+          		<img src="https://demos.onepagelove.com/html/browny/assets/images/portfolio/p2.jpg" width="90%" alt="web development" />
+          		<div class="label">Web Development</div>
+        		</div>
+        		<div class="portfolio-box">
+          		<img src="https://demos.onepagelove.com/html/browny/assets/images/portfolio/p4.jpg" width="90%" alt="web design" />
+          		<div class="label">Web Design</div>
+        		</div>
+        		<div class="portfolio-box">
+          		<img src="https://demos.onepagelove.com/html/browny/assets/images/portfolio/p5.jpg" width="90%" alt="mobile apps" />
+          		<div class="label">Mobile Apps</div>
+        	</div>
+      		</section>
+      
+      		<h2 id="contact">Contact</h2>
+      		<section class="form">
+        	<form action="action_page.php">
+
+          	<label for="fname">Name</label>
+          	<input type="text" id="fname" name="firstname" placeholder="Your name..">
+          	<label for="subject">Subject</label>
+          	<select id="subject" name="subject">
+            	<option value="partnership">Partnership</option>
+            	<option value="proposal">Proposal</option>
+            	<option value="question">Question</option>
+          	</select>
+
+          	<label for="message">Message</label>
+          	<textarea id="message" name="message" placeholder="Write your message here.." style="height:200px"></textarea>
+
+          <input type="submit" value="SUBMIT">
+
+        </form>
+      </section>
+		</div>
 		</div>
 	</div>
 	<div class='footer'>
-		<div class='footer-item'>
-			<h3 class='username'>copyright</h3>
-			<p class='comment'>@mmelzz | 2020</p>
-			</div>
-		<div class='footer-item'>
 		<h3 class='username'>follow me</h3>
-				<p class='comment'><a class="social" href="https://www.facebook.com/mmelzz"><span class="fa fa-facebook-square fa-2x"></span></a>
-				<a class="social" href="https://www.instagram.com/mmelzz"><span class="fa fa-instagram fa-2x"></span></a>
-				<a class="social" href="https://www.linkedin.com"><span class="fa fa-linkedin-square fa-2x"></span></a>
-				</p>
-				</div>
-		<div class='footer-item'></div>
+		<p class='comment'><a class="social" href="https://www.facebook.com/mmelzz"><span class="fa fa-facebook-square fa-2x"></span></a>
+		<a class="social" href="https://www.instagram.com/mmelzz"><span class="fa fa-instagram fa-2x"></span></a>
+		<a class="social" href="https://www.linkedin.com"><span class="fa fa-linkedin-square fa-2x"></span></a>
+		</p>
+	</div>
 	</div>
   </body>
 </html>
