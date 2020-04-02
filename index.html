@@ -11,15 +11,10 @@
     }
 	
 	body {
-		  text-align: center;
+		  margin: 0;
 		  font-family: 'Dosis',sans-serif;
-          color: black;
 		  }
-	/*img.foto{
-          border: 2px solid #fff; /* border dengan warna putih solid ukuran 2px*/
-          /*width: 300px; ukuran gambar*/
-          /*margin-top: 10px; /* jarak gambar dengan body
-        /*}*/
+	
 	header{
       	position: fixed;
       	width: 100%;
@@ -40,6 +35,7 @@
       	float: center;
       	color: #6d6f7b;
     	}
+			
 	nav ul {
     	list-style-type: none;
     	}
@@ -59,23 +55,145 @@
     	nav ul li a:hover {
       	background-color: #ccc;
     	}
-		
-	h2 {
-          font-size: 16px; /*ukuran font*/
-          font-weight: 400; /*ketebalan huruf*/
-          line-height: 1; /*tinggi 1 baris teks*/
-        }
- 
-    /*h4{*/
-          /*font-size: 16px;
-          /*font-weight: 400;
-          /*letter-spacing: 1px; /*jarak antar huruf*/
-		  /*line-height: 1; /*tinggi 1 baris teks*/
-        /*}*/
-		header nav{
+	
+	main {
+		clear: both;
+	}
+	 article section {
+      margin: 0 auto;
+      text-align: center;
+      max-width: 720px;
+      padding: 24px;
+      /*border: 1px solid #ccc;*/
+    }
+
+    article section.form {
+      text-align: center;
+    }
+    
+    article h1{
+      padding-top: 160px;
+      padding-bottom: 24px;
+      text-align: center;
+      font-size: 44px;
+      max-width: 580px;
+      margin: 0 auto 24px;
+    }
+
+    article p{
+      font-size: 18px;
+      color: #5b5e6d;
+      line-height: 30px;
+    }
+
+    article img.hero-image{
+      display: block;
+      margin: 0 auto;
+      width: 25%
+    }
+    
+    article h2{
+      text-align: center;
+      padding: 160px 0 24px 0;
+      font-size: 32px;
+      margin: 0 auto;
+    }
+
+    article .portfolio-box{
+      width: 32%;
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    article section.portfolio{
+      max-width: 90%;
+    }
+
+    article .stat-box .label{
+      color: #6d6f7b;
+      font-size: 16px;
+    }
+    
+    /* Style inputs with type="text", select elements and textareas */
+    input[type=text], select, textarea {
+      width: 100%; 
+      height: 36px;
+      padding: 12px; /* Some padding */ 
+      border: 1px solid #ccc; /* Gray border */
+      border-radius: 4px; /* Rounded borders */
+      box-sizing: border-box; /* Make sure that padding and width stays in place */
+      margin-top: 6px; /* Add a top margin */
+      margin-bottom: 16px; /* Bottom margin */
+      resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+    }
+
+    /* Style the submit button with a specific background color etc */
+    input[type=submit] {
+      background-color: #DCDCDC;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    /* When moving the mouse over the submit button, add a darker green color */
+    input[type=submit]:hover {
+      background-color: #ccc;
+    }
+    
+    footer {
+      margin: 0 auto;
+      padding: 24px 0;
+      text-align: center;
+      color: #36384c;
+      background-color: #DCDCDC;
+    }
+    
+    @media only screen and (max-width: 600px) {
+      body {
+        background-color: lightblue;
+      }
+      
+      header .logo{
+        padding: 32px;
+        float: none;
+        text-align: center;
+      }
+      
+      article h1{
+        padding-top: 160px;
+        padding-bottom: 12px;
+        padding-left: 10px;
+        padding-right: 10px;
+        text-align: center;
+        font-size: 36px;
+      }
+      
+      article p{
+        font-size: 16px;
+        color: #5b5e6d;
+        line-height: 24px;
+      }
+      
+      header nav{
         display: none;
       }
       
+      article .portfolio-box{
+        width: 90%;
+        display: block;
+        margin: 0 auto 16px;
+      }
+      
+      article h2{
+        padding: 80px 0 24px 0;
+      }
+      
+      article img.hero-image{
+        display: none;
+      }	
+	
+     
       .portfolio-box{
         width: 90%;
         display: block;
@@ -89,25 +207,9 @@
           font-size: 16px;
         }
 	
-	/*.menu {
-		height: 50px;
-		background-color: #008B8B;
-	}
-	.sidebar {
-		float: right;
-		width: 250px;
-		height: 700px;
-		background-color: #8FBC8F;
-	}*/
-		
-	.content {
-		float: left; 
-		background-color: #FFFFFF;
-	}
-
 	.footer {
-		overflow: hidden;
-		background-color: #FFFFFF;
+	overflow: hidden;
+	background-color: #FFFFFF;
 	}
 	</style>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -125,12 +227,12 @@
       	</ul>
     	</nav>
   	</header>
-		  
-	<div class='content'>
+	<main>	  
+	<article>
 		<h2 id="about"> a journey of a Professional UX/UI Designer to be <br/> </h2>
 		
 		<section class="hero-text">
-        	<p>Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        	<p>on progress learning</p>
       		</section>
 		
 		<img class="hero-image" src="https://lh3.googleusercontent.com/-EGNmMRc0MLA/XoS5iBEDyOI/AAAAAAAABUs/p2uJ6jiiNToWYwSyz45Ps4NARATaueurQCLcBGAsYHQ/w140-h140-p/%25E2%2580%2594Pngtree%25E2%2580%2594programming%2Band%2Bcoding%2Bconcept%2Bapplication_3654332.png" alt="Me!" />
@@ -172,14 +274,14 @@
       </section>
 		</div>
 		</div>
-	</div>
-	<div class='footer'>
+	  </main>
+	<footer>
 		<h3 class='username'>follow me</h3>
 		<p class='comment'><a class="social" href="https://www.facebook.com/mmelzz"><span class="fa fa-facebook-square fa-2x"></span></a>
 		<a class="social" href="https://www.instagram.com/mmelzz"><span class="fa fa-instagram fa-2x"></span></a>
 		<a class="social" href="https://www.linkedin.com"><span class="fa fa-linkedin-square fa-2x"></span></a>
 		</p>
-	</div>
+	</footer>
 	</div>
   </body>
 </html>
