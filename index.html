@@ -15,31 +15,71 @@
 		  font-family: 'Dosis',sans-serif;
           color: black;
 		  }
-	img.foto{
+	/*img.foto{
           border: 2px solid #fff; /* border dengan warna putih solid ukuran 2px*/
-          width: 300px; /*ukuran gambar*/
-          margin-top: 10px; /* jarak gambar dengan body*/
-        }
+          /*width: 300px; ukuran gambar*/
+          /*margin-top: 10px; /* jarak gambar dengan body
+        /*}*/
+	header{
+      	position: fixed;
+      	width: 100%;
+      	background-color: white;
+      	border-bottom: solid 1px #ebebeb;
+    	}
+		
+    	header .logo{
+      	padding: 32px;
+      	float: left;
+    	}
+    
+    	header .logo img{
+      	width:300px;
+    	}
+
+    	header nav{
+      	float: center;
+      	color: #6d6f7b;
+    	}
+	nav ul {
+    	list-style-type: none;
+    	}
+
+    	nav ul li {
+      	float: left;
+    	}
+
+    	nav ul li a {
+      	display: block;
+      	color: #6d6f7b;
+      	text-align: center;
+      	padding: 20px;
+      	text-decoration: none;
+    	}
+
+    	nav ul li a:hover {
+      	background-color: #ccc;
+    	}
+		
 	h2 {
-          font-size: 32px; /*ukuran font*/
-          font-weight: 700; /*ketebalan huruf*/
+          font-size: 16px; /*ukuran font*/
+          font-weight: 400; /*ketebalan huruf*/
           line-height: 1; /*tinggi 1 baris teks*/
         }
  
-    h4{
-          font-size: 16px;
-          font-weight: 400;
-          letter-spacing: 1px; /*jarak antar huruf*/
-		  line-height: 1; /*tinggi 1 baris teks*/
-        }
+    /*h4{*/
+          /*font-size: 16px;
+          /*font-weight: 400;
+          /*letter-spacing: 1px; /*jarak antar huruf*/
+		  /*line-height: 1; /*tinggi 1 baris teks*/
+        /*}*/
     p {
           font-size: 18px;
         }
 	
-	.menu {
+	/*.menu {
 		height: 50px;
 		background-color: #008B8B;
-	}
+	}*/
 	.sidebar {
 		float: right;
 		width: 250px;
@@ -113,11 +153,21 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
   <body>
-	<img src="https://lh3.googleusercontent.com/-jEv6HG_X148/XoSx78p6plI/AAAAAAAABUg/JH2If4GHbIoLtRWaudS8vqvbaWoIGulpgCLcBGAsYHQ/w140-h78-p/spring.jpg" class="foto">
-    <h2>momimel</h2>	
-    <h4>..catatan seorang mamak dari negeri sebrang.. <br/> </h4>
-    
-	<div class='menu'></div>
+	  <header>
+	<div class="logo">
+	<img src="https://lh3.googleusercontent.com/-yn9492waklQ/XcFNsb-eThI/AAAAAAAABIY/8yPG-zczP24wO-GzCFygO4ZNXN6BU_kEACEwYBhgLKs0DAMBZVoCn-lQTDp3GDK97JI39asFYCP8Sdv-qeJRPFL6Z7V2fsfu6S6l1MWwwEFplxUT3BBCQSnBpnUL0ZRsG1oKpgUe_JqmW6qh1HZ5aOY06RT08JZs-CL5-fhI1B-4a8_LAhjERF-ysclEaHDuMDK7gIgvDwddWy-mwzLWFvfEEWHebuR7QBpdmpEBHQ2hrIPsSJgJP6V4Duu5aaO6bB6RrzHjXCY4COyMOt6kjTqMmSDOr3nxrq2mTKeoizJ4uysUAYaye65zv5SeCiHLxnV4Mb-IOLDoRDYleEKXa3wSe3zk3sSNkZVCSGNEmCLL90-RauyFc87OcH_44MXC60vIRTDtmZQoonqIk6Ydo-BV7_aBb4_WQFuf2kkM3YPf9DRCoCEQiL19nPBU9KTF1E55jrh_5m5bf8cDEtlrLuZQAOo8Gws67wGQWX-EtG8kkl1mxzUI5CpfkoA4XfsE_al8_4JS_qmEpEFnda6JdNQYrCK7JvyHwpMyVDo5zJjKRXCEtHABlgqOivQW8Tf-g4zxcDjZZeA4-wtKyizFir_sXN-7j6xzalxoh5fgB_TfGw8YGFVqYlVHKYEN-6mw7AMakJ6oQlblXFgZhv-AwhNOW9AU/w140-h25-p/momimel.jpg">	
+    	<h2>a journey of a Professional UX/UI Designer to be <br/> </h2>
+	</div>
+    	<nav>
+      	<ul>
+        	<li><a href="#about">Home</a></li>
+        	<li><a href="#portfolio">Portfolio</a></li>
+        	<li><a href="#contact">Contact</a></li>
+      	</ul>
+    	</nav>
+  	</header>
+		  
+	/*<div class='menu'></div>*/
 	<div class='container'>
 	<div class='page'>
 	
